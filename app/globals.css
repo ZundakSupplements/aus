@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --app-radius: 1.5rem;
+}
+
+@theme inline {
+  --color-background: #f5f6fb;
+  --color-foreground: #020617;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+* {
+  @apply antialiased;
+}
